@@ -11,3 +11,4 @@
 !/shared/README.md
 /vendor/gems/
 *.gz
+*.lock
