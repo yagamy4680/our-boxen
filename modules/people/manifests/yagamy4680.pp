@@ -60,5 +60,9 @@ class people::yagamy4680 {
 		source => 'wbond/package_control'
 	}
 
+	sublime_text::package { 'DocBlockr':
+		source => 'spadgos/sublime-jsdocs'
+	}
+
 	include vlc
 }
