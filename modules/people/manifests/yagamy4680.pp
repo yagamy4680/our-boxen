@@ -1,6 +1,10 @@
 class people::yagamy4680 {
 	notify { 'welcome yagamy4680': }
 
+	class { 'ruby::global':
+		version => '1.9.3'
+	}
+
 	include osx::global::expand_print_dialog
 	include osx::global::expand_save_dialog
 	include osx::global::tap_to_click
