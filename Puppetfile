@@ -74,6 +74,8 @@ github "iterm2",      "1.2.2"
 github "alfred",      "1.3.1"
 github "osx",         "2.7.1"
 github "vlc",         "1.1.0"
+github "macdown",     "1.0.0", :repo => "singuerinc/puppet-macdown"
+
 
 
 # Optional/custom modules. There are tons available at

@@ -1,9 +1,9 @@
 class people::yagamy4680 {
 	notify { 'welcome yagamy4680': }
 
-	class { 'ruby::global':
-		version => '1.9.3'
-	}
+	# class { 'ruby::global':
+	#	version => '1.9.3'
+	# }
 
 	include osx::global::expand_print_dialog
 	include osx::global::expand_save_dialog
@@ -50,6 +50,9 @@ class people::yagamy4680 {
 	include alfred
 	include iterm2::stable
 	# include zsh
+
+	class { 'macdown': version => '0.2.3' }
+
 	include sublime_text
 
 	sublime_text::package { 'Emmet':
@@ -66,6 +69,12 @@ class people::yagamy4680 {
 
 	sublime_text::package { 'DocBlockr':
 		source => 'spadgos/sublime-jsdocs'
+	}
+
+	package { 
+		'SQLiteBrowser':
+			source => "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.4.0/sqlitebrowser-3.4.0.dmg",
+			provider => appdmg;
 	}
 
 	include vlc
