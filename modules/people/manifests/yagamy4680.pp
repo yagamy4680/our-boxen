@@ -71,9 +71,15 @@ class people::yagamy4680 {
 		source => 'spadgos/sublime-jsdocs'
 	}
 
+	class { 'nodejs::global': version => 'v0.10' }
+
 	package { 
 		'SQLiteBrowser':
 			source => "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.4.0/sqlitebrowser-3.4.0.dmg",
+			provider => appdmg;
+
+		'Keka':
+			source => "http://www.kekaosx.com/release/Keka-1.0.4-intel.dmg",
 			provider => appdmg;
 	}
 
