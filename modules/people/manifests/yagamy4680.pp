@@ -51,7 +51,7 @@ class people::yagamy4680 {
 	include iterm2::stable
 	# include zsh
 
-	class { 'macdown': version => '0.2.3' }
+	class { 'macdown': version => '0.3' }
 
 	include sublime_text
 
